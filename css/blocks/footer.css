@@ -1,0 +1,17 @@
+.footer {
+  border-top: 1px solid black;
+}
+
+.footer__contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 655px) {
+  .footer__contacts {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+  }
+}
