@@ -8,7 +8,12 @@ html(lang="ru")
         meta(name="description" content="Художественная ковка г. Санкт-Петербург: ковка по индивидуальным заказам, все виды работ с металлом.")
         title Художественная ковка
         link(rel="stylesheet" href="style.css")
+        script(src="main.js")
     body
-        header
-        main
-        footer
+        .container
+            include ./modules/header/header.pug
+            article
+                main.main
+                aside.aside
+            article
+            footer.footer

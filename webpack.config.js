@@ -1,13 +1,15 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const WebpackMd5Hash = require('webpack-md5-hash');
+// const WebpackMd5Hash = require('webpack-md5-hash');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
 module.exports = {
   entry: { main: './src/app.js' },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[chunkhash].js'
+    filename: '[name].js'
   },
   devServer: {
     stats: 'errors-only',
@@ -34,16 +36,16 @@ module.exports = {
         },
       },
       {
-        test: /\.(jpg|png|svg)$/,
+        test: /\.(png|jpg|gif|svg)$/,
         loader: 'file-loader',
         options: {
-          name: 'images/[name].[ext]',
-        },
+          name: '[name].[ext]'
+        }
       }
     ]
   },
-  plugins: [ 
-    new CleanWebpackPlugin('dist', {} ),
+  plugins: [
+    new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: 'style.css',
     }),
@@ -52,7 +54,9 @@ module.exports = {
       hash: true,
       template: './src/index.pug',
       filename: 'index.html'
-    }),
-    new WebpackMd5Hash()
+    }),new CopyWebpackPlugin([
+      {from: `./src/images`, to: `./images` },
+    ])
+    // new WebpackMd5Hash()
   ]
 };
