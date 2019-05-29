@@ -3,7 +3,7 @@ mixin section(link, name, content)
             img.section__img(src=link, alt="Изображение")
             p.section__title=name
             p.section__text=content
-section.section.section_greed
+section.section
     +section("https://img.icons8.com/ios/48/000000/clock.png", "Быстро", "Наше производство работает без выходных и Вы получите свой заказ точно в оговоренный срок.")
     +section("https://img.icons8.com/ios/48/000000/settings.png", "Качественно", "Гарантия качества на всю продукцию. В нашей мастерской работают только квалифицированные мастера с большим опытом работы.")
     +section("https://img.icons8.com/ios/48/000000/shopping-cart.png", "На любой вкус", "Мы поможем подобрать для Вас индивидуальное решение. Выполняем все виды работ с металлом от ювелирной обработки до крупных инжинерных решений.")
