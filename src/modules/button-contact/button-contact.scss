@@ -13,3 +13,11 @@
     background-color: rgb(255, 94, 0);
   }
 }
+
+@media(max-width: 500px) {
+  .button-contact {
+    display: none;
+  }
+}
+
+

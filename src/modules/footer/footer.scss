@@ -3,3 +3,12 @@
   justify-content: space-between;
   border-top: 1px solid black;
 }
+
+@media (max-width: 655px) {
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+  }
+}

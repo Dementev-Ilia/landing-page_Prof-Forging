@@ -1,11 +1,27 @@
-.aside{
-    flex-basis: 43%;
-    margin-right: 95px;
-    position: relative;
-  }
-
+.aside {
+  flex-basis: 43%;
+  margin-right: 95px;
+  position: relative;
+}
 
 .content-image {
-    max-width: 503px;
-    display: block;
+  max-width: 503px;
+  display: block;
+}
+
+@media (max-width: 980px) {
+  .aside {
+    margin-right: 30px;
   }
+}
+
+@media (max-width: 850px) {
+  .aside {
+    margin: 0 0 20px 0;
+    flex-basis: auto;
+  }
+
+  .content-image{
+    width: 100%;
+  }
+}

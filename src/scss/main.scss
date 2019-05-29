@@ -9,7 +9,6 @@
 @import "../modules/section/section.scss";
 @import "../modules/footer/footer.scss";
 
-
 .container {
   max-width: 100%;
   min-width: 320px;
@@ -18,18 +17,23 @@
   position: relative;
 }
 
-
 .container_grid {
   max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
-.content__section{
+.content__section {
   margin: 120px auto;
   display: flex;
   align-items: center;
   max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+@media (max-width: 850px) {
+  .content__section {
+    flex-direction: column;
+  }
 }
