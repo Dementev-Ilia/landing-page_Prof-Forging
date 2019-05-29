@@ -2,11 +2,7 @@ header.header
     //- img.bacground-img(src="images/header.jpeg", alt="изображение")
     .header_greed
         .header__menu
-            .logo
-                p Prof-Forging
-            .phone
-                p +79000000000
-            .button-contact
-                a(href="#") Связаться с нами
-        .headline
-            h1 Ковка| Металлоизделия
+            include ../logo/logo.pug
+            include ../phone/phone.pug
+            include ../button-contact/button-contact.pug
+        include ../headline/headline.pug

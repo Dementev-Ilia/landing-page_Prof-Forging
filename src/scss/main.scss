@@ -1,9 +1,14 @@
 @import "vars.scss";
 @import "../modules/header/header.scss";
-@import "../modules/footer/footer.scss";
+@import "../modules/button-contact/button-contact.scss";
+@import "../modules/logo/logo.scss";
+@import "../modules/phone/phone.scss";
+@import "../modules/headline/headline.scss";
 @import "../modules/aside/aside.scss";
 @import "../modules/main-content/main-content.scss";
 @import "../modules/section/section.scss";
+@import "../modules/footer/footer.scss";
+
 
 .container {
   max-width: 100%;
@@ -15,6 +20,15 @@
 
 
 .container_greed {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.content__section{
+  margin: 120px auto;
+  display: flex;
+  align-items: center;
   max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto;

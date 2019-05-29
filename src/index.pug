@@ -11,11 +11,11 @@ html(lang="ru")
         script(src="main.js")
     body
         .container
+            include ./modules/header/header.pug
             .container_greed
-                include ./modules/header/header.pug
-                article
-                    include ./modules/main-content/main-content.pug
-                    include ./modules/aside/aside.pug
+                article.content
+                    section.content__section
+                        include ./modules/aside/aside.pug
+                        include ./modules/main-content/main-content.pug
                     include ./modules/section/section.pug
-                article
                 include ./modules/footer/footer.pug

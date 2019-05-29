@@ -1,0 +1,35 @@
+.section {
+  display: flex;
+  justify-content: space-between;
+  margin: 120px auto;
+}
+
+.section__wrap {
+  flex-basis: 30%;
+  text-align: center;
+}
+
+.section__img{
+  height: 50px;
+}
+
+
+.section__text{
+  text-align: justify;
+  font-size: 16px;
+  line-height: 30px;
+  color: $main-fonts;
+  letter-spacing: 0.8px;
+  margin: 20px 0;
+  opacity: .7;
+}
+
+
+.section__wrap .section__title {
+  font-size: 18px;
+  letter-spacing: 0.9px;
+  opacity: 1;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
